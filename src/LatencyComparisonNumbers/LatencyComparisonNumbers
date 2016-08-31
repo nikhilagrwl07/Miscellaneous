@@ -1,4 +1,4 @@
-Source of below stated information - https://gist.github.com/jboner/2841832
+Source of below stated information - https://github.com/checkcheckzz/system-design-interview
 
 Latency Comparison Numbers
 --------------------------
@@ -16,6 +16,11 @@ Read 1 MB sequentially from SSD*     1,000,000   ns    1,000 us    1 ms  ~1GB/se
 Disk seek                           10,000,000   ns   10,000 us   10 ms  20x datacenter roundtrip
 Read 1 MB sequentially from disk    20,000,000   ns   20,000 us   20 ms  80x memory, 20X SSD
 Send packet CA->Netherlands->CA    150,000,000   ns  150,000 us  150 ms
+System call overhead	400 ns
+Context switch between processes	3000 ns
+fork() (statically-linked binary)	70,000 ns
+fork() (dynamically-linked binary)	160,000 ns
+
 
 Notes
 -----
