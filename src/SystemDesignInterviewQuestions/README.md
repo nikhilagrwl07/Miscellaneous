@@ -1,4 +1,4 @@
-* [Source of below information](http://www.palantir.com/2011/10/how-to-rock-a-systems-design-interview/)
+* [Source of below information](https://github.com/checkcheckzz/system-design-interview)
 
 [![logo](imgs/systemcycle.png)](https://github.com/checkcheckzz/system-design-interview)
 
