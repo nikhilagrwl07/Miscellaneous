@@ -9,5 +9,6 @@ public class TestNestedConceptInJava {
         OuterClass.InnerClass innerClass = outerClass.new InnerClass();
         innerClass.printInnnerClassName();
 
+        System.out.println("Testing git of Intellij from github UI");
     }
 }
