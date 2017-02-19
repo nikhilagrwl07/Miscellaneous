@@ -1,4 +1,4 @@
-package Java8;
+package Java8Constructs;
 
 /**
  * Created by nikhilagrawal on 18/02/17.
