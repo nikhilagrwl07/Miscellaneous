@@ -27,7 +27,7 @@ public class LambdaAndStreamExample {
 
         String[] names = {"Nikhil", "Ritu", "Priyanka"};
 
-        Arrays.sort(names, (String o1, String o2) -> (o1.length() - o2.length()));
+        Arrays.sort(names, (o1, o2) -> (o1.length() - o2.length()));
         System.out.println(Arrays.asList(names));
     }
 }
