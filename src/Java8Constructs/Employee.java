@@ -4,21 +4,20 @@ package Java8Constructs;
  * Created by nikhilagrawal on 18/02/17.
  */
 public class Employee {
-
-    String name;
+    int id;
     int salary;
 
-    public Employee(String name, int salary) {
-        this.name = name;
+    public Employee(int id, int salary) {
+        this.id = id;
         this.salary = salary;
     }
 
-    public String getName() {
-        return name;
+    public int getId() {
+        return id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getSalary() {
@@ -31,10 +30,18 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "{" +
-                "name='" + name + '\'' +
+        return "Employee{" +
+                "id=" + id +
                 ", salary=" + salary +
                 '}';
+    }
+
+    public void raiseSalaryBy200Percent(){
+        this.setSalary(this.getSalary()*2);
+    }
+
+    public void raiseSalaryBy400Percent(){
+        this.setSalary(this.getSalary()*4);
     }
 }
 
