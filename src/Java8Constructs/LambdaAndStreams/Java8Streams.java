@@ -1,10 +1,7 @@
-package Java8Constructs;
+package Java8Constructs.LambdaAndStreams;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * Created by z002cww on 12/15/16.

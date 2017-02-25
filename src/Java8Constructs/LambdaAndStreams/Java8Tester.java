@@ -1,4 +1,4 @@
-package Java8Constructs;
+package Java8Constructs.LambdaAndStreams;
 
 interface Vehicle {
     static void blowHorn() {

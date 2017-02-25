@@ -1,4 +1,4 @@
-package Java8Constructs;
+package Java8Constructs.LambdaAndStreams;
 
 /**
  * Created by nikhilagrawal on 18/02/17.

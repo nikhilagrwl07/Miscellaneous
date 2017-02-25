@@ -1,7 +1,6 @@
-package Java8Constructs;
+package Java8Constructs.LambdaAndStreams;
 
 import java.util.List;
-import java.util.function.Consumer;
 
 /**
  * Created by nikhilagrawal on 21/02/17.

@@ -1,7 +1,7 @@
-package Java8Constructs;
+package Java8Constructs.InnnerClassesInJava7;
 
 /**
- * Created by nikhilagrawal on 19/02/17.
+ * Created by nikhilagrawal on 21/02/17.
  */
 public class OuterClass {
     int x = 10;

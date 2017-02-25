@@ -1,4 +1,5 @@
-package Java8Constructs;
+package Java8Constructs.InnnerClassesInJava7;
+
 
 /**
  * Created by nikhilagrawal on 19/02/17.
