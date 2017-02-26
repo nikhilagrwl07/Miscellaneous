@@ -29,10 +29,10 @@ public class Java8Streams {
     long count = strList.stream().filter(x -> x.isEmpty()).count();
     System.out.printf("List %s has %d empty strings %n", strList, count);
 
-    ArrayList<String> listToArrayList = strList.stream().parallel().collect(Collectors.toCollection(ArrayList::new));
+    ArrayList<String> listToArrayList = strList.parallelStream().collect(Collectors.toCollection(ArrayList::new));
     System.out.println("listToArrayList = " + listToArrayList);
 
-    TreeSet<String> listToTreeSet = strList.stream().parallel().collect(Collectors.toCollection(TreeSet::new));
+    TreeSet<String> listToTreeSet = strList.parallelStream().collect(Collectors.toCollection(TreeSet::new));
     System.out.println("listToTreeSet = " + listToTreeSet);
 
     long num = strList.stream().filter(x -> x.length()> 3).count();

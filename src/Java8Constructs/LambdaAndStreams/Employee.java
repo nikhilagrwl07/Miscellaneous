@@ -6,10 +6,17 @@ package Java8Constructs.LambdaAndStreams;
 public class Employee {
     int id;
     int salary;
+    String officeAddress;
 
     public Employee(int id, int salary) {
         this.id = id;
         this.salary = salary;
+    }
+
+    public Employee(int id, int salary, String officeAddress) {
+        this.id = id;
+        this.salary = salary;
+        this.officeAddress = officeAddress;
     }
 
     public int getId() {
@@ -43,5 +50,13 @@ public class Employee {
     public void raiseSalaryBy400Percent(){
         this.setSalary(this.getSalary()*4);
     }
+
+    public void setOfficeAddress(String officeAddress) {
+        this.officeAddress = officeAddress;
+    }
+    public String getOfficeAddress() {
+        return officeAddress;
+    }
+
 }
 
