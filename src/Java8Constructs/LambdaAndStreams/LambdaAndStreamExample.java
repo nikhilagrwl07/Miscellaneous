@@ -1,6 +1,7 @@
 package Java8Constructs.LambdaAndStreams;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
 
@@ -37,17 +38,17 @@ public class LambdaAndStreamExample {
             e.setSalary(e.getSalary() * 4);
         };
 
-        employeeNormalList.stream().parallel().forEach(giveAllRaise);
-        employeeTargetList.stream().parallel().forEach(giveAllRaise);
+//        employeeNormalList.stream().parallel().forEach(giveAllRaise);
+//        employeeTargetList.stream().parallel().forEach(giveAllRaise);
 
 //        employeeNormalList.stream().parallel().forEach(Employee::raiseSalaryBy400Percent);
 //        employeeNormalList.stream().parallel().forEach(employee -> System.out.println(employee.toString()));
 
 
-        final int[] total = {1000};
+//        final int[] total = {1000};
 
-        employeeNormalList.stream().parallel().forEach(employee -> total[0] += employee.getSalary());
-        System.out.println(total[0]);
+//        employeeNormalList.stream().parallel().forEach(employee -> total[0] += employee.getSalary());
+//        System.out.println(total[0]);
 
 //        String[] names = {"Nikhil", "Ritu", "Priyanka"};
 //
@@ -55,5 +56,9 @@ public class LambdaAndStreamExample {
 //        System.out.println(Arrays.asList(names));
 
        // Stream.of(employeeList).parallel().forEach(System.out::println);
+      List<String> listOfLanguage = Arrays.asList("Java", "Perl", "C", "Lisp");
+
+      String results = String.join(",",listOfLanguage);
+      System.out.println("results = " + results);
     }
 }
