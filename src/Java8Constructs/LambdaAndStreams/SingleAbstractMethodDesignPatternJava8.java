@@ -5,7 +5,7 @@ import java.util.concurrent.Callable;
 /**
  * @author Nikhil Agrawal on 5/17/17.
  */
-public class SingleAbstractMethodDesignPattern {
+public class SingleAbstractMethodDesignPatternJava8 {
 
   public static void main(String[] args) {
 
