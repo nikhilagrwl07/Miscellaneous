@@ -38,17 +38,17 @@ public class LambdaAndStreamExample {
             e.setSalary(e.getSalary() * 4);
         };
 
-//        employeeNormalList.stream().parallel().forEach(giveAllRaise);
-//        employeeTargetList.stream().parallel().forEach(giveAllRaise);
+        employeeNormalList.forEach(giveAllRaise);
+        employeeTargetList.forEach(giveAllRaise);
 
-//        employeeNormalList.stream().parallel().forEach(Employee::raiseSalaryBy400Percent);
-//        employeeNormalList.stream().parallel().forEach(employee -> System.out.println(employee.toString()));
+        employeeNormalList.forEach(Employee::raiseSalaryBy400Percent);
+        employeeNormalList.forEach(employee -> System.out.println(employee.toString()));
 
 
-//        final int[] total = {1000};
+        int[] total = {0};
 
-//        employeeNormalList.stream().parallel().forEach(employee -> total[0] += employee.getSalary());
-//        System.out.println(total[0]);
+        employeeNormalList.forEach(employee -> total[0] += employee.getSalary());
+        System.out.println(total[0]);
 
 //        String[] names = {"Nikhil", "Ritu", "Priyanka"};
 //

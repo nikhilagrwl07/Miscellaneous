@@ -34,9 +34,13 @@ public class Java8FunctionExamples {
     // there we can use stream , then filter and then map and then findFirst() as another way
     // to find double of first even number which is greater than 3
     Predicate<Integer> isDivisblePredicate = (x) -> (x > 3 && x % 2 == 0);
-    Function<Integer, Integer> firstNumber = (x) -> IntStream.range(1, x).filter(n -> isDivisblePredicate.test(n)).findFirst().getAsInt();
+
+    Function<Integer, Integer> firstNumber = (x) -> IntStream.range(1, x).filter(isDivisblePredicate::test).findFirst().getAsInt();
+
     Function<Integer, Integer> doubleNumber = (x) -> x * 2;
+
     Function<Integer, Integer> result = x -> firstNumber.andThen(doubleNumber).apply(x);
+
     System.out.println("Double of first even number which is greater than 3  is : " + result.apply(10));
 
 
