@@ -57,14 +57,17 @@ public class OptionalExampleOfClass {
 //        Arrays.sort(names, (o1, o2) -> (o1.length() - o2.length()));
 //        System.out.println(Arrays.asList(names));
 
-       // Stream.of(employeeList).parallel().forEach(System.out::println);
       List<String> listOfLanguage = Arrays.asList("Java", "Perl", "C", "Lisp");
 
       String results = String.join(",",listOfLanguage);
       System.out.println("results = " + results);
     }
 
-    public String returnCustomerNameWithGivenId(List<Employee> employeeList , int employeeId){
-       return employeeList.stream().filter(c -> c.getId()==employeeId).findFirst().map(Employee::getOfficeAddress).orElse("null");
+    public String getCustomerOfficeAddressWithGivenId(List<Employee> employeeList , int employeeId){
+       return employeeList.stream()
+                          .filter(c -> c.getId()==employeeId)
+                          .findFirst()
+                          .map(Employee::getOfficeAddress)
+                          .orElse("null");
     }
 }
