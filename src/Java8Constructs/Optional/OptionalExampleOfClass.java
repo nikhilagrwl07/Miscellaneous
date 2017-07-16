@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
+import java.util.function.IntSupplier;
 
 /**
  * Created by nikhilagrawal on 18/02/17.
@@ -61,6 +62,11 @@ public class OptionalExampleOfClass {
 
       String results = String.join(",",listOfLanguage);
       System.out.println("results = " + results);
+
+      String hello = "hello";
+      IntSupplier intSupplier = hello::length;
+      System.out.println(intSupplier.getAsInt());
+
     }
 
     public String getCustomerOfficeAddressWithGivenId(List<Employee> employeeList , int employeeId){
