@@ -1,14 +1,17 @@
-package Java8Constructs.LambdaAndStreams;
+package Java8Constructs.Optional;
+
+import Java8Constructs.LambdaAndStreams.Employee;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
+import java.util.function.IntSupplier;
 
 /**
  * Created by nikhilagrawal on 18/02/17.
  */
-public class LambdaAndStreamExample {
+public class OptionalExampleOfClass {
 
     public static void main(String[] args) {
 
@@ -55,10 +58,22 @@ public class LambdaAndStreamExample {
 //        Arrays.sort(names, (o1, o2) -> (o1.length() - o2.length()));
 //        System.out.println(Arrays.asList(names));
 
-       // Stream.of(employeeList).parallel().forEach(System.out::println);
       List<String> listOfLanguage = Arrays.asList("Java", "Perl", "C", "Lisp");
 
       String results = String.join(",",listOfLanguage);
       System.out.println("results = " + results);
+
+      String hello = "hello";
+      IntSupplier intSupplier = hello::length;
+      System.out.println(intSupplier.getAsInt());
+
+    }
+
+    public String getCustomerOfficeAddressWithGivenId(List<Employee> employeeList , int employeeId){
+       return employeeList.stream()
+                          .filter(c -> c.getId()==employeeId)
+                          .findFirst()
+                          .map(Employee::getOfficeAddress)
+                          .orElse("null");
     }
 }

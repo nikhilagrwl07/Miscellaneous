@@ -16,6 +16,7 @@ public class GroupByExample {
         Employee e4= new Employee(4,4000,"Delhi");
         Employee e5= new Employee(5,5000, "Mumbai");
         Employee e6= new Employee(6,6000, "Mumbai");
+        Employee e7= new Employee(7,7000, "Pune");
 
         List<Employee> targetEmployeeList = new ArrayList<Employee>(){{
             add(e1);
@@ -24,6 +25,7 @@ public class GroupByExample {
             add(e4);
             add(e5);
             add(e6);
+            add(e7);
         }};
 
         Map<String, Long> coutingByOfficeAddress = targetEmployeeList.parallelStream().collect(Collectors.groupingBy(Employee::getOfficeAddress, Collectors.counting()));
