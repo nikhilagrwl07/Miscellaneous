@@ -1,20 +1,17 @@
 package Generics.genericClass;
 
-public class DataContainer<T>
-{
+public class DataContainer<T> {
 	T containerData;
-	public DataContainer(T data)
-	{
+	
+	public DataContainer(T data) {
 		containerData = data;
 	}
 	
-	public T getData()
-	{
+	public T getData() {
 		return containerData;
 	}
 	
-	public void setData(T value)
-	{
+	public void setData(T value) {
 		containerData = value;
 	}
 	
@@ -23,11 +20,7 @@ public class DataContainer<T>
 	 * Relies on T having toString() defined.
 	 * Returns String representing the state of the container data
 	 */
-	public String toString()
-	{
-		return containerData == null 
-							? null  
-							: String.format("%s"
-									, containerData.toString());
+	public String toString() {
+		return containerData == null ? null : String.format("%s", containerData.toString());
 	}
 }
