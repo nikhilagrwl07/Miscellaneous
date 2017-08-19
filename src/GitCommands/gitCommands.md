@@ -30,3 +30,10 @@ git checkout -- .
 git reset HEAD <fileName>
 
 git reset <commitId>
+
+git config --global rerere.enabled true
+#Commands for running rebase
+git fetch upstream
+git rebase upstream/develop
+
+
