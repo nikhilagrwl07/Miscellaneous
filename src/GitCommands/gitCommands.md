@@ -30,5 +30,3 @@ git checkout -- .
 git reset HEAD <fileName>
 
 git reset <commitId>
-
-
