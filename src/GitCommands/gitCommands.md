@@ -34,4 +34,3 @@ git reset <commitId>
 
 
 
-
