@@ -38,5 +38,9 @@ git config --global rerere.enabled true
 git fetch upstream
 git rebase upstream/develop
 
-this line is in learning_rebase branch , used for (nikhil inside learning_rebase)learning rebase command
+
+resolve all issue manually
+git add .
+git rebase --continue
+no need of extra commit. rebase will take care of managing commits
 
