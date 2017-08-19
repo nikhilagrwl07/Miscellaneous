@@ -38,6 +38,8 @@ git config --global rerere.enabled true
 git fetch upstream
 git rebase upstream/develop
 
+This is dummy line for learning rebase command
+
 
 this line is in master branch , used for learning rebase command
 
