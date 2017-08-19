@@ -30,5 +30,6 @@ git checkout -- .
 #git reset HEAD command can be used only after git add command
 git reset HEAD <fileName>
 
+--just for commiting purpose
 
 
