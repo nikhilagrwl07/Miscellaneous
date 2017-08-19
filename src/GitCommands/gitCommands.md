@@ -35,3 +35,7 @@ git config --global rerere.enabled true
 #Commands for running rebase
 git fetch upstream
 git rebase upstream/develop
+resolve all issue manually
+git add .
+git rebase --continue
+no need of extra commit. rebase will take care of managing commits
