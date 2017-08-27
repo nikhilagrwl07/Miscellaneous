@@ -1,3 +1,4 @@
+git add -p
 git log --oneline
 git log --oneline --graph
 gitk
