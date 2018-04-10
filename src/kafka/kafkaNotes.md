@@ -6,7 +6,3 @@ allow better memory usage, disk usage etc.
 4. Orange box in each broker represent leader in kafka. All reads and writes by consumer goes to leader. Rest all are replicas
 5. Producer read and write on leader , messages will be replicated by leader to replicas. In turn, replicas send ack to leader that they got the message.
 6.
-
-
-
-
