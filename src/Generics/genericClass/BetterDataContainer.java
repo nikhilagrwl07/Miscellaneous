@@ -2,10 +2,10 @@ package Generics.genericClass;
 
 public class BetterDataContainer<T, S>
 {
-	T obj1;
-	S obj2;
+	private T obj1;
+	private S obj2;
 	
-	public BetterDataContainer(T o1, S o2)
+	BetterDataContainer(T o1, S o2)
 	{
 		obj1 = o1;
 		obj2 = o2;
@@ -33,7 +33,7 @@ public class BetterDataContainer<T, S>
 	
 	public String toString()
 	{
-		return String.format("T:S] %s : %s"
+		return String.format("T:S  %s : %s"
 				, obj1.toString()
 				, obj2.toString());
 	}

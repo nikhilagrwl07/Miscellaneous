@@ -1,0 +1,25 @@
+cat -vet fileName
+
+tail fileName // show bottom 10 lines
+head fileName // show top 10 lines
+
+head -n 3 fileName // first 3 lines
+tail -n 3 fileName // last 3 lines
+
+wc -l fileName
+
+more fileName    Suggestion - press Space bar to go to next page . Can not to go previous page
+less fileName    Suggestion - Remember less is more . use Up and down arrow to scroll up and down
+
+After less command -->
+    10G -- for going to line number 10
+     1G -- for going to line number 1
+     /Anything -- to search word 'Anything' --> press n to go to next occurence
+
+
+ls -l | less
+
+
+
+
+

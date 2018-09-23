@@ -1,8 +1,8 @@
-package Generics.genericClass;
+package Generics.GenericMaxAndMinMethods;
 
-public class Animal
+public class Animal implements Comparable<Animal>
 {
-	private String name;
+	private String _name;
 	
 	public Animal()
 	{
@@ -11,12 +11,12 @@ public class Animal
 	
 	public Animal(String name)
 	{
-		this.name = name;
+		_name = name;
 	}
 	
 	public String getName()
 	{
-		return name;
+		return _name;
 	}
 	
 	@Override
@@ -24,7 +24,7 @@ public class Animal
 	{
 		return String.format("%s] Name: %s\n"
 								, getClass().getName()
-								, name);
+								, _name);
 	}
 	
 	@Override
@@ -33,5 +33,18 @@ public class Animal
 		if (o1 == null) return false;
 		if (!(o1 instanceof Animal)) return false;
 		return (this.getName().equals(((Animal)o1).getName()));
+	}
+
+
+
+	@Override
+	public int compareTo(Animal o) {
+		if (o == null) return 1;
+		
+		//Strings are comparable.
+		int ctVal = ((Animal)o).getName().compareTo(this.getName());
+		if (ctVal < 0) return -1;
+		if (ctVal > 0) return 1;
+		return ctVal;
 	}
 }

@@ -17,16 +17,16 @@ public class Java8PredicateExamples {
 //    Predicate<Double> greaterthan0 = (x) -> x > 0.0;
 //    ;
 //
-//    System.out.println(greaterthan0.test(10.0d));
+//    System.out.println(greaterthan0.Random(10.0d));
 
 //    Predicate<Integer> greaterThanTen = (i) -> i > 10;
 //    Predicate<Integer> lowerThanTwenty = (i) -> i < 20;
 //
 //    // Will print true
-//    greaterThanTen.and(lowerThanTwenty).test(15);
+//    greaterThanTen.and(lowerThanTwenty).Random(15);
 //
 //    // Will print false
-//    greaterThanTen.and(lowerThanTwenty).negate().test(15);
+//    greaterThanTen.and(lowerThanTwenty).negate().Random(15);
 
     Predicate<Integer> isDivisblePredicate = (x) -> IntStream.range(2,x).noneMatch(divisor -> x%divisor==0);
     System.out.println("IsPrime Predicate - " + isDivisblePredicate.test(30));

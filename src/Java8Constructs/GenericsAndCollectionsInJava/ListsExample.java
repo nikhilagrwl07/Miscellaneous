@@ -19,10 +19,7 @@ public class ListsExample {
    */
   @SafeVarargs
   private static <T> List<T> convertArrayToList(T... arr){
-    List<T> list = new ArrayList<T>();
-    for (T t: arr) {
-      list.add(t);
-    }
+    List<T> list = new ArrayList<T>(Arrays.asList(arr));
     return list;
   }
 
