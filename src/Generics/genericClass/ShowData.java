@@ -9,7 +9,7 @@ public class ShowData
 		
 		System.out.println(sData);
 		System.out.println(iData);
-		
+
 		BetterDataContainer<Integer, String> bdc1 =
 				new BetterDataContainer<>(0, "Aardvark");
 		BetterDataContainer<Integer, String> bdc2 =
@@ -20,6 +20,7 @@ public class ShowData
 		
 		BetterDataContainer<String, Animal> bdc4 =
 				new BetterDataContainer<>("3", new Animal("Koala"));
+
 		
 		System.out.println(bdc1);
 		System.out.println(bdc2);

@@ -11,26 +11,22 @@ public class BetterDataContainer<T, S>
 		obj2 = o2;
 	}
 	
-	public T getT()
-	{
+	public T getT() {
 		return obj1;
 	}
 	
-	public void setT(T o1)
-	{
+	public void setT(T o1) {
 		obj1 = o1;
 	}
 	
-	public S getS()
-	{
+	public S getS() {
 		return obj2;
 	}
 	
-	public void setS(S o2)
-	{
+	public void setS(S o2) {
 		obj2 = o2;
 	}
-	
+
 	public String toString()
 	{
 		return String.format("T:S  %s : %s"

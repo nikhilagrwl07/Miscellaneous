@@ -4,11 +4,10 @@ public class Animal
 {
 	private String name;
 	
-	public Animal()
-	{
+	public Animal() {
 		//do nothing
 	}
-	
+
 	public Animal(String name)
 	{
 		this.name = name;
@@ -27,11 +26,11 @@ public class Animal
 								, name);
 	}
 	
-	@Override
-	public boolean equals(Object o1)
-	{
-		if (o1 == null) return false;
-		if (!(o1 instanceof Animal)) return false;
-		return (this.getName().equals(((Animal)o1).getName()));
+	@Override public boolean equals(Object o1) {
+		if (o1 == null)
+			return false;
+		if (!(o1 instanceof Animal))
+			return false;
+		return (this.getName().equals(((Animal) o1).getName()));
 	}
 }
