@@ -29,6 +29,9 @@ public class Java8PredicateExamples {
 		//    greaterThanTen.and(lowerThanTwenty).negate().test(15);
 		
 		Predicate<Integer> isDivisblePredicate = (x) -> IntStream.range(2, x).noneMatch(divisor -> x % divisor == 0);
+
+
+
 		System.out.println("IsPrime Predicate - " + isDivisblePredicate.test(30));
 		
 		process(10, (i) -> i > 20);

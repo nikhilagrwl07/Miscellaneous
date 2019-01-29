@@ -9,10 +9,17 @@ public class JavaPassByValue {
         changeName(aDog);
         System.out.println(aDog.getName());
 
+        changeNameWithPassByValue(aDog);
+        System.out.println(aDog.getName());
+
     }
 
     public static void changeName(Dog aDog){
         aDog = new Dog("D3");
+    }
+
+    public static void changeNameWithPassByValue(Dog aDog){
+        aDog.setName("D3");
     }
 
 }
