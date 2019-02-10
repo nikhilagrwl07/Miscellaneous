@@ -1,4 +1,4 @@
-package Generics.GenericMaxAndMinMethods;
+package Generics.genericMaxAndMinMethods;
 
 public class Animal implements Comparable<Animal>
 {

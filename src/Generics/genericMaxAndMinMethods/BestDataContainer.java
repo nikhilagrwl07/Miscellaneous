@@ -1,4 +1,4 @@
-package Generics.GenericMaxAndMinMethods;
+package Generics.genericMaxAndMinMethods;
 
 import java.util.NoSuchElementException;
 
