@@ -42,7 +42,7 @@ public class Animal implements Comparable<Animal>
 		if (o == null) return 1;
 		
 		//Strings are comparable.
-		int ctVal = ((Animal)o).getName().compareTo(this.getName());
+		int ctVal = o.getName().compareTo(this.getName());
 		if (ctVal < 0) return -1;
 		if (ctVal > 0) return 1;
 		return ctVal;

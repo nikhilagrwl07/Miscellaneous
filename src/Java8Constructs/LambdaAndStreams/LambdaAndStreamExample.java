@@ -25,11 +25,7 @@ public class LambdaAndStreamExample {
 		employeeTargetList.add(employee1);
 		employeeTargetList.add(employee2);
 		employeeTargetList.add(employee3);
-		
-		//        for (Employee e : employeeList) {
-		//            System.out.println(e.toString());
-		//        }
-		
+
 		//Example for combining lambdas into one single lambda and then reusing it
 		Consumer<Employee> giveAllRaise = e -> {
 			System.out.println("Giving 200 percent hike ");

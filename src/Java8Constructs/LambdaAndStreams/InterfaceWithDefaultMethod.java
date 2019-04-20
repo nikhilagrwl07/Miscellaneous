@@ -21,7 +21,7 @@ interface FourWheeler {
 /**
  * Created by nikhilagrawal on 19/02/17.
  */
-public class Java8Tester {
+public class InterfaceWithDefaultMethod {
 	public static void main(String args[]) {
 		Vehicle vehicle = new Car();
 		vehicle.print();

@@ -3,28 +3,10 @@ package Java8Constructs.LambdaAndStreams;
 import java.util.*;
 import java.util.stream.Collectors;
 
-/**
- * Created by z002cww on 12/15/16.
- */
 public class Java8Streams {
 	
 	public static void main(String[] args) {
-		
-		Employee e1 = new Employee(1, 1000);
-		Employee e2 = new Employee(2, 2000);
-		Employee e3 = new Employee(3, 3000);
-		Employee e4 = new Employee(4, 4000);
-		Employee e5 = new Employee(5, 5000);
-		Employee e6 = new Employee(6, 6000);
-		
-		List<Employee> employeeList = new ArrayList<Employee>() {{
-			add(e1);
-			add(e2);
-			add(e3);
-			add(e4);
-			add(e5);
-			add(e6);
-		}};
+
 		List<String> strList = Arrays.asList("defg", "abc", "", "bcd", "", "jk", "jk");
 		long count = strList.stream().filter(x -> x.isEmpty()).count();
 		System.out.printf("List %s has %d empty strings %n", strList, count);

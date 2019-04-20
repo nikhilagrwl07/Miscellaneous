@@ -2,11 +2,10 @@ package Generics.genericMethod;
 
 public class Driver {
     private static final int SIZE = 10;
-    private static Animal[] myAnimals;
 
     public static void main(String[] args) {
 
-        myAnimals = new Animal[SIZE];
+        Animal[] myAnimals = new Animal[SIZE];
         myAnimals[0] = new Animal("Aardvark");
         myAnimals[1] = new Animal("Bear");
         myAnimals[2] = new Animal("Chipmunk");
@@ -24,14 +23,14 @@ public class Driver {
     }
 
     //a generic swap method
-    public static <T> void swapItems(int p1, int p2, T[] items) {
+    public static <T extends Animal> void swapItems(int p1, int p2, T[] items) {
         T temp = items[p1];
         items[p1] = items[p2];
         items[p2] = temp;
     }
 
     //a generic swap method with T as return type
-    public static <T> T swapItemsWithSomeReturn(int p1, int p2, T[] items) {
+    public static <T extends Animal> T swapItemsWithSomeReturn(int p1, int p2, T[] items) {
         T temp = items[p1];
         items[p1] = items[p2];
         items[p2] = temp;
@@ -39,7 +38,7 @@ public class Driver {
     }
 
     //a generic item printer
-    public static <T> void printItems(T[] items) {
+    public static <T extends Animal> void printItems(T[] items) {
         for (T item : items) {
             System.out.println("Next " + item.getClass().getName() + ": " + item);
         }

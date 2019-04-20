@@ -1,4 +1,4 @@
-package Generics.genericClass;
+package Generics.genericClass.Player;
 
 public class VolleyBallPlayer extends Player {
 

@@ -22,16 +22,6 @@ public class Main {
 		listOfEmployees.add(e4);
 		listOfEmployees.add(e5);
 
-
-		//        Employee[] listOfEmployees= new Employee[5];
-		//        listOfEmployees[0]= e1;
-		//        listOfEmployees[1]= e2;
-		//        listOfEmployees[2] = e3;
-		//        listOfEmployees[3] = e4;
-		//        listOfEmployees[4] = e5;
-
-
-
 		System.out.println("Unsorted List : ");
 		printObjectsFromList(listOfEmployees);
 

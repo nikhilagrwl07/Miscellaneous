@@ -1,4 +1,4 @@
-package Generics.genericClass;
+package Generics.genericClass.Player;
 
 import java.util.ArrayList;
 import java.util.List;
