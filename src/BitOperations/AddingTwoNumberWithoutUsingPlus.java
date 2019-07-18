@@ -21,7 +21,7 @@ public class AddingTwoNumberWithoutUsingPlus {
 			x = x ^ y;
 			System.out.println("x = " + x);
 			
-			// Carry is shifted by one so that adding it to x gives the required sum
+			// Carry is shifted by one so that adding it to x gives the required op
 			y = carry << 1;
 		}
 		return x;

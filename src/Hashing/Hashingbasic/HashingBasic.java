@@ -1,4 +1,4 @@
-package Hashing.hashingbasic1;
+package Hashing.Hashingbasic;
 
 import java.util.Objects;
 

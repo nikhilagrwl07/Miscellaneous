@@ -81,7 +81,7 @@ public class LeftMaxDiffProblem {
 		}
 
 
-		// Now find the maximum sum subarray in diff array
+		// Now find the maximum op subarray in diff array
 		int max_diff = Integer.MIN_VALUE;
 		int c2 = 0;
 		for (int l = i; l <= j; l++) {

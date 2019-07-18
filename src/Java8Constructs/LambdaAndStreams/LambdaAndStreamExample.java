@@ -46,7 +46,7 @@ public class LambdaAndStreamExample {
 		employeeNormalList.forEach(employee -> total[0] += employee.getSalary());
 		System.out.println(total[0]);
 		
-		//        String[] names = {"Nikhil", "Ritu", "Priyanka"};
+		//        String[] names = {"Nikhil", "Ritu"};
 		//
 		//        Arrays.sort(names, (o1, o2) -> (o1.length() - o2.length()));
 		//        System.out.println(Arrays.asList(names));
